@@ -18,18 +18,10 @@ export default function PetaPage() {
     <div className="flex min-h-screen flex-col">
       <Header />
       
-      <main className="flex-1">
+      <main className="flex-1 bg-neutral-100">
         <div className="h-[calc(100vh-4rem)] flex">
           {/* Sidebar */}
-          <div className="w-80 bg-white border-r overflow-y-auto p-6 space-y-6">
-            <div>
-              <Link href="/">
-                <Button variant="ghost" size="sm">
-                  <ArrowLeft className="mr-2 h-4 w-4" />
-                  Kembali
-                </Button>
-              </Link>
-            </div>
+          <div className="w-80 bg-white overflow-y-auto p-6 space-y-6">
 
             <div>
               <h1 className="text-2xl font-bold text-neutral-900 mb-2">Peta Interaktif</h1>
@@ -137,7 +129,7 @@ export default function PetaPage() {
           </div>
 
           {/* Map Container */}
-          <div className="flex-1 relative bg-neutral-100">
+          <div className="flex-1 relative bg-neutral-200">
             <div className="absolute inset-0 flex items-center justify-center">
               <Card className="max-w-md">
                 <CardHeader>

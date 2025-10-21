@@ -18,14 +18,6 @@ export default function AnalisisPage() {
         <section className="relative bg-gradient-to-br from-green-600 to-green-700 text-white py-12">
           <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           <div className="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-            <div className="mb-6">
-              <Link href="/">
-                <Button variant="ghost" size="sm" className="text-white hover:bg-white/20">
-                  <ArrowLeft className="mr-2 h-4 w-4" />
-                  Kembali ke Beranda
-                </Button>
-              </Link>
-            </div>
 
             <div className="max-w-3xl">
               <Badge variant="glass" size="lg" className="mb-4">
@@ -79,7 +71,7 @@ export default function AnalisisPage() {
         </section>
 
         {/* Content Section */}
-        <section className="py-12 bg-neutral-50">
+        <section className="py-12 bg-neutral-100">
           <div className="container mx-auto px-6 sm:px-8 lg:px-12">
             <div className="grid lg:grid-cols-3 gap-8">
               {/* Left Column - BEP Calculator */}
@@ -95,7 +87,7 @@ export default function AnalisisPage() {
                 {/* Sarana & Prasarana */}
                 <Card>
                   <CardContent className="p-6">
-                    <h3 className="font-semibold text-lg mb-4 flex items-center">
+                    <h3 className="font-semibold text-lg mb-4 flex items-center text-neutral-900">
                       <CheckSquare className="mr-2 h-5 w-5 text-blue-600" />
                       Sarana & Prasarana (Coming Soon)
                     </h3>

@@ -14,31 +14,7 @@ export default function DashboardPage() {
     <div className="flex min-h-screen flex-col">
       <Header />
       
-      <main className="flex-1 bg-neutral-50">
-        {/* Header */}
-        <section className="bg-white border-b">
-          <div className="container mx-auto px-6 sm:px-8 lg:px-12 py-6">
-            <div className="flex items-center justify-between">
-              <div>
-                <Link href="/">
-                  <Button variant="ghost" size="sm">
-                    <ArrowLeft className="mr-2 h-4 w-4" />
-                    Kembali
-                  </Button>
-                </Link>
-                <h1 className="text-3xl font-bold text-neutral-900 mt-4">Dashboard Analisis</h1>
-                <p className="text-neutral-600 mt-2">
-                  Analisis komprehensif potensi investasi dan kelayakan usaha
-                </p>
-              </div>
-              <Badge variant="primary" size="lg">
-                <BarChart3 className="mr-2 h-4 w-4" />
-                Dashboard v2.0
-              </Badge>
-            </div>
-          </div>
-        </section>
-
+      <main className="flex-1 bg-neutral-100">
         {/* Content */}
         <section className="py-8">
           <div className="container mx-auto px-6 sm:px-8 lg:px-12">
