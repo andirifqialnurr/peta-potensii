@@ -1,4 +1,171 @@
-# Peta Potensi Usaha
+# 🗺️ Peta Potensi Usaha - Kolaka Timur
+
+Platform analisis potensi usaha berbasis peta dengan data RTRW, LP2B, dan komoditas unggulan wilayah.
+
+![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)
+![Next.js](https://img.shields.io/badge/Next.js-15-black.svg)
+![Bun](https://img.shields.io/badge/Bun-1.3+-orange.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue.svg)
+
+## 🚀 Quick Start
+
+### Prasyarat
+
+- **Bun runtime** (versi 1.0+) - 10-20x lebih cepat dari npm!
+
+### Instalasi Bun
+
+**Windows (PowerShell sebagai Administrator):**
+```powershell
+powershell -c "irm bun.sh/install.ps1|iex"
+```
+
+**macOS/Linux:**
+```bash
+curl -fsSL https://bun.sh/install | bash
+```
+
+### Menjalankan Project
+
+```bash
+# 1. Install dependencies
+bun install
+
+# 2. Jalankan development server
+bun run dev
+
+# 3. Buka browser di http://localhost:3001
+```
+
+### Build Production
+
+```bash
+# Build aplikasi
+bun run build
+
+# Jalankan production server
+bun run start
+```
+
+## 📁 Struktur Project
+
+```
+peta-potensii/
+├── src/
+│   ├── app/                    # Next.js App Router
+│   │   ├── layout.tsx         # Root layout
+│   │   ├── globals.css        # Global styles
+│   │   ├── page.tsx           # Homepage
+│   │   ├── peta/              # Halaman Peta
+│   │   ├── analisis/          # Halaman Analisis
+│   │   └── dashboard/         # Halaman Dashboard
+│   ├── components/            # React components
+│   │   ├── ui/               # Shadcn UI components
+│   │   ├── Header.tsx
+│   │   ├── Footer.tsx
+│   │   └── ...
+│   ├── lib/                   # Utility functions
+│   ├── types/                 # TypeScript types
+│   ├── data/                  # Data files
+│   └── styles/                # Style utilities
+├── public/                     # Static files
+├── DOCS.md                    # Dokumentasi lengkap
+├── package.json
+├── next.config.ts
+├── tailwind.config.js
+└── tsconfig.json
+```
+
+## 🎨 Fitur Utama
+
+### 1. 🏠 Halaman Beranda (/)
+- Hero section dengan logo Kolaka Timur
+- Feature showcase 
+- CTA buttons
+
+### 2. 🗺️ Halaman Peta (/peta)
+- Peta interaktif dengan Leaflet.js
+- Layer control (RTRW, LP2B, LCP2B)
+- Legend dan informasi status lahan
+
+### 3. 📊 Halaman Analisis (/analisis)
+- Kalkulator BEP (Break Even Point)
+- Komoditas unggulan (14+ kategori)
+- Checklist sarana & prasarana
+- Location warning
+
+### 4. 📈 Halaman Dashboard (/dashboard)
+- 6 Tab navigasi
+- Investment recommendation dengan scoring
+- Status lahan, komoditas, ZNT
+- ROE Calculator
+
+## 🛠️ Teknologi
+
+- **Framework**: Next.js 15 (App Router + Turbopack)
+- **Runtime**: Bun 1.3+
+- **Language**: TypeScript 5
+- **Styling**: Tailwind CSS v4
+- **UI Library**: Shadcn UI (Radix UI primitives)
+- **Icons**: Lucide React
+- **Maps**: Leaflet.js (ready for integration)
+
+## 📝 Commands
+
+```bash
+bun install          # Install dependencies
+bun run dev          # Development server
+bun run build        # Build for production
+bun run start        # Production server
+bun run lint         # Lint code
+```
+
+## 🎯 Environment Variables
+
+Buat file `.env` di root folder:
+
+```env
+PORT=3001
+NEXT_PUBLIC_API_URL=http://localhost:3001/api
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=
+```
+
+## 📚 Dokumentasi Lengkap
+
+Lihat [DOCS.md](./DOCS.md) untuk:
+- Setup project dari nol
+- Penjelasan singkatan (RTRW, LP2B, LCP2B, dll)
+- Komponen UI lengkap
+- Bank warna
+- Panduan integrasi peta
+- Changelog
+
+## 🚨 Troubleshooting
+
+**Error: Port sudah digunakan**
+```powershell
+# Windows
+netstat -ano | findstr :3001
+taskkill /PID <PID> /F
+```
+
+**Clear cache:**
+```bash
+Remove-Item -Recurse -Force .next
+bun install
+bun run dev
+```
+
+## 📄 Lisensi
+
+Project ini dibuat untuk keperluan analisis potensi usaha berbasis data tata ruang.
+
+---
+
+**© 2025 Peta Potensi Usaha**  
+*Platform analisis lokasi usaha berbasis data tata ruang.*
+
+**Happy Coding with Bun! ⚡**
 
 > Platform analisis potensi usaha berbasis peta dengan data RTRW, LP2B, dan komoditas unggulan wilayah Kolaka Timur.
 
